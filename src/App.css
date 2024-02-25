@@ -69,7 +69,7 @@
   justify-content: space-between;
   padding: 0vw 1vw 0vw 1vw;
   align-items: center;
-  gap: 10vw;
+  gap: 0vw;
   font-size: large;
 }
 
@@ -78,11 +78,19 @@
   height: 25px;
 }
 .search-wrapper img{
-  height: 100%;
+  height: 90%;
   width: 100%;
 }
 
-
+.searchBar{
+  /* font-family: Roboto; */
+  width: 30vw;
+  height: 2vw;
+  outline:none; 
+  background:border-box; 
+  border:none;
+  color: #FFF;
+}
 .location{
   display: flex;
   margin: auto;
@@ -105,7 +113,7 @@
 .rectangle{
   display: flex;
   margin: auto;
-  margin-top: 16vw;
+  margin-top: 2vw;
   justify-content: center;
   align-items: center;
   background-color: #D9D9D9;
@@ -140,11 +148,20 @@
   display: flex;
 }
 
-
 .other img{
   height: 100%;
 }
 
 .text-3{
   font-size: 30px;
+}
+
+.temp-text{
+  font-size: 200px;
+  text-align: center;
+}
+
+::placeholder{
+  color: #FFF;
+  opacity: 1;
 }
