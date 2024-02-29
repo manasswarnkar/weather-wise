@@ -4,6 +4,7 @@ import GlassCard from './components/GlassCard';
 import Navbar from './components/Navbar';
 // import { useSelector } from 'react-redux';
 import axios from 'axios';
+import MapCard from './components/MapCard';
 
 
 function App(props) {
@@ -36,14 +37,22 @@ function App(props) {
   //   console.log("useEffect");
   //   fetchData(city);
   // }, []);
+  
+  const [currScreen, setCurrScreen] = useState(null);
 
+  const handleCallback = (e) => {
+    // e.preventDefault();
+    const value = e;
+    setCurrScreen(value);
+    console.log("currScreen", value);
+  }
 
   return (
     <div className="App">
       {
         weatherData && (<>
-          <Navbar data={weatherData}/>
-          <GlassCard weatherData={weatherData}/>
+          <Navbar data={weatherData} parentCallback={handleCallback}/>
+          {currScreen === 'mapbtn' ? <MapCard /> : <GlassCard weatherData={weatherData} />}
         </>)
       }
     </div>

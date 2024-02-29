@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import homebtn from '../assets/icons/Home.png';
 import mapbtn from '../assets/icons/Vector.png';
 
-const Navbar = (props) => {
-  const weatherData = props.data;
+const Navbar = ({parentCallback, data}) => {
+  const weatherData = data;
+  const [curr, setCurr] = useState('homebtn');
 
   const formatDay = (timezone) => {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -32,6 +33,13 @@ const Navbar = (props) => {
     return displayTime;
   }
 
+  const handleClick = (e) => {
+    const buttonId = e.target.id;
+    console.log(buttonId);
+    setCurr(buttonId);
+    parentCallback(buttonId);
+  }
+
   return (
     <div className='Navbar'>
       <div className="homeBtn-wrapper">
@@ -39,8 +47,8 @@ const Navbar = (props) => {
       </div>
       <div className="daytime">{weatherData ? formatTime(weatherData.timezone) : "10 AM"}, {weatherData ? formatDay(weatherData.timezone) : 'Monday'}</div>
       <div className="otherBtn-wrapper">
-        <a className="otherBtn"><img src={homebtn} alt="home" /></a>
-        <a className="otherBtn"><img src={mapbtn} alt="map" /></a>
+        <a className="otherBtn"><img src={homebtn} id='homebtn' alt="home" onClick={handleClick}/></a>
+        <a className="otherBtn"><img src={mapbtn} id='mapbtn' alt="map" onClick={handleClick}/></a>
       </div>
     </div>
   )
