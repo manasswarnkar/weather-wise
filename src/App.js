@@ -10,13 +10,13 @@ import MapCard from './components/MapCard';
 function App(props) {
   //const city = useSelector(state => state.a);
   const [weatherData, setWeatherData] = useState(props.weatherData ? props.weatherData : null);
-
+  const apiKey = process.env.REACT_APP_API_KEY;
   const fetchData = async (query) => {
     console.log("1");
     try {
       console.log("2");
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=22dc02b23c3a585fab9e4e9c2e6946d9`
+        `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=${apiKey}`
       );
       console.log("3");
       setWeatherData(response.data);
