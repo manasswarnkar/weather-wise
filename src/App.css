@@ -4,7 +4,7 @@
   background-size: cover;
   width: 100vw;
   /* background-color: #1c2344; */
-  height: 100vh;
+  height: 110vh;
   
 }
 
@@ -143,7 +143,7 @@
 .other{
   display: flex;
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 5vw;
   justify-content: center;
   align-items: center;
   height: 2vw;
@@ -153,29 +153,32 @@
   justify-content: center;
   align-items: center; 
   display: flex;
+  gap: 1vw;
 }
 .other .precipitation{
   justify-content: center;
   align-items: center;
   display: flex;
+  gap: 1vw;
 
 }
 .other .windspeed{
   justify-content: center;
   align-items: center;
   display: flex;
+  gap: 1vw;
 }
 
 .other img{
-  height: 6.25vw;
+  height: 5vw;
 }
 
 .text-3{
-  font-size: 1.875vw;
+  font-size: 2vw;
 }
 
 .temp-text{
-  font-size: 12.5vw;
+  font-size: 10vw;
   text-align: center;
 }
 
