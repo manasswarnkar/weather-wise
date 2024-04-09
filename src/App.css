@@ -5,9 +5,11 @@
   width: 100vw;
   /* background-color: #1c2344; */
   height: 110vh;
-  overflow-x: hidden;
 }
 
+.App::-webkit-scrollbar{
+  display: none;
+}
 
 /* Navbar */
 .Navbar{
