@@ -9,6 +9,7 @@ import MapCard from './components/MapCard';
 
 function App(props) {
   //const city = useSelector(state => state.a);
+  //trial comment
   const [weatherData, setWeatherData] = useState(props.weatherData ? props.weatherData : null);
   const apiKey = process.env.REACT_APP_API_KEY;
   const fetchData = async (query) => {
