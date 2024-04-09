@@ -4,7 +4,7 @@
   background-size: cover;
   width: 100vw;
   /* background-color: #1c2344; */
-  height: 110vh;
+  height: 100vh;
 }
 
 .App::-webkit-scrollbar{
@@ -75,15 +75,22 @@
   border-color: #FFF;
   color: #FFF;
 }
+
+@media screen and (max-width:800px) {
+  .GlassCard{
+    height: 50vh;
+  }
+}
+
 .search-wrapper{
   margin: auto;
-  margin-top: 7vh;
+  margin-top: 3vw;
   border-color: #FFF;
   border-radius: 1.5625vw;
   border-width: 0.03125vw;
   border-style:solid;
   width: 33vw;
-  height: 6vh;
+  height: 4vw;
   display: flex;
   justify-content: space-between;
   padding: 0vw 1vw 0vw 1vw;
@@ -92,12 +99,20 @@
   font-size: large;
 }
 
+.form{
+  align-content: center;
+}
+
+
 .search-wrapper .search-icon{
+  align-content: center;
+  justify-content: center;
   width: 1.5625vw;
   height: 1.5625vw;
 }
-.search-wrapper img{
-  height: 90%;
+
+.search-icon img{
+  height: 100%;
   width: 100%;
 }
 
@@ -111,13 +126,30 @@
   color: #FFF;
   font-size: 1.25vw;
 }
+
+@media screen and (max-width: 800px) {
+  .search-wrapper{
+    margin-top: 5vw;
+  }
+
+  .search-wrapper .search-icon{
+    width: 3.125vw;
+    height: 3.125vw;
+  }
+
+  .searchBar{
+    height: 5vw;
+    font-size: 2.5vw;
+  }
+}
+
 .location{
   display: flex;
   margin: auto;
   font-size: 2.2vw;
   align-items: center;
   justify-content: center;
-  margin-top: 5vh;
+  margin-top: 5vw;
   gap: 1vw;
 }
 
@@ -130,6 +162,18 @@
   height: 100%;
 }
 
+
+@media screen and (max-width: 800px) {
+  .location {
+    font-size: 4.4vw;
+    margin-bottom: 5vw;
+  }
+
+  .location-icon{
+    width: 4.375vw;
+    height: 4.375vw;
+  }
+}
 .rectangle{
   display: flex;
   margin: auto;
@@ -162,7 +206,7 @@
   align-items: center;
   display: flex;
   gap: 1vw;
-
+  
 }
 .other .windspeed{
   justify-content: center;
@@ -179,6 +223,45 @@
   font-size: 2vw;
 }
 
+@media screen and (max-width: 800px) {
+  .other{
+    
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 30vw;
+    margin: 10vw 22.5vw 0vw 22.5vw;
+    row-gap: 10vw;
+    
+  }
+
+  .other .pressure{
+    justify-content: space-evenly;
+    gap: 5vw;
+  }
+
+  .other .precipitation{
+    justify-content: space-evenly;
+    gap: 10vw;
+
+  }
+
+  .other .windspeed{
+    justify-content: space-evenly;
+    gap: 5vw;
+
+  }
+
+  .text-3{
+    font-size: 5vw;
+  }
+
+  .windspeed .text-3{
+    font-size: 4vw;
+  }
+}
+
+
 .temp-text{
   font-size: 10vw;
   text-align: center;
@@ -189,13 +272,22 @@
   opacity: 1;
 }
 
+@media screen and (max-width:800px) {
+  .temp-text{
+    font-size: 20vw;
+    margin-bottom: 5vw;
+  }
 
+  .rectangle{
+    margin-bottom: 10vw;
+  }
+}
 
 /* MAP CARD */
 .MapCard{
   margin: auto;
   width: 75vw;
-  height: 75vh;
+  height: 75vw;
   /* background-image:linear-gradient(to bottom right, rgba(239, 239, 239, 0.21), rgba(255, 255, 255, 0.028)); */
   /* backdrop-filter: blur(8px);  */
   box-shadow: 0.625vw 0.625vw 0.625vw rgba(0, 0, 0, 0.0875);
