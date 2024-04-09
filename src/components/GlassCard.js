@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import search from '../assets/icons/search.png';
 import map from '../assets/icons/map.png';
-import pressure from '../assets/icons/pressure.png';
-import wind from '../assets/icons/Wind.png';
-import precipitation from "../assets/icons/precipitation.png";
+import pressure from '../assets/icons/pressure.svg';
+import wind from '../assets/icons/Wind.svg';
+import precipitation from "../assets/icons/precipitation.svg";
 import SearchBar from './SearchBar';
 import PropTypes from 'prop-types';
 import axios from 'axios';
