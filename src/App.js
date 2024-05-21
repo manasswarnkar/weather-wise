@@ -13,15 +13,16 @@ function App(props) {
   const [weatherData, setWeatherData] = useState(props.weatherData ? props.weatherData : null);
   const apiKey = process.env.REACT_APP_API_KEY;
   const fetchData = async (query) => {
-    console.log("1");
+    // console.log("1");
     try {
-      console.log("2");
+      // console.log("2");
       const response = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=${apiKey}`
       );
-      console.log("3");
+      // console.log("3");
       setWeatherData(response.data);
-      console.log(response.data); //You can see all the weather data in console log
+      // console.log(response.data); 
+      //You can see all the weather data in console log
       //  console.log(weatherData);
     } catch (error) {
       console.log("fetchData error");

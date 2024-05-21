@@ -149,7 +149,7 @@
   font-size: 2.2vw;
   align-items: center;
   justify-content: center;
-  margin-top: 5vw;
+  margin-top: 3vw;
   gap: 1vw;
 }
 
@@ -189,7 +189,7 @@
 .other{
   display: flex;
   margin: auto;
-  margin-top: 5vw;
+  margin-top: 4vw;
   justify-content: center;
   align-items: center;
   height: 2vw;
@@ -287,7 +287,7 @@
 .MapCard{
   margin: auto;
   width: 75vw;
-  height: 75vw;
+  height: 75vh;
   /* background-image:linear-gradient(to bottom right, rgba(239, 239, 239, 0.21), rgba(255, 255, 255, 0.028)); */
   /* backdrop-filter: blur(8px);  */
   box-shadow: 0.625vw 0.625vw 0.625vw rgba(0, 0, 0, 0.0875);
