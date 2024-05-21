@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weather-wise/static/css/main.00da1248.css",
-    "main.js": "/weather-wise/static/js/main.075f6cc8.js",
+    "main.js": "/weather-wise/static/js/main.159965c4.js",
     "static/js/453.7b71858d.chunk.js": "/weather-wise/static/js/453.7b71858d.chunk.js",
     "static/media/image 1.png": "/weather-wise/static/media/image 1.aa73c314309b6ccb89d6.png",
     "index.html": "/weather-wise/index.html",
@@ -9,11 +9,11 @@
     "static/media/precipitation.svg": "/weather-wise/static/media/precipitation.ef808dc75954c771c6c95bf56e649915.svg",
     "static/media/Wind.svg": "/weather-wise/static/media/Wind.f0ccf619b004706be6a8b5a7cb6b04c6.svg",
     "main.00da1248.css.map": "/weather-wise/static/css/main.00da1248.css.map",
-    "main.075f6cc8.js.map": "/weather-wise/static/js/main.075f6cc8.js.map",
+    "main.159965c4.js.map": "/weather-wise/static/js/main.159965c4.js.map",
     "453.7b71858d.chunk.js.map": "/weather-wise/static/js/453.7b71858d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00da1248.css",
-    "static/js/main.075f6cc8.js"
+    "static/js/main.159965c4.js"
   ]
 }
